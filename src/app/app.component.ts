@@ -23,6 +23,5 @@ export class AppComponent {
 
   calcArea():void {
     this.area = 2 * this.aSide * this.bSide;
-    console.log("mukodik")
   }
 }
