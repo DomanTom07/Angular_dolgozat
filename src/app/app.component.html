@@ -8,8 +8,34 @@ Github: https://github.com/DomanTom07/
 Licenc: GNU GPL
 -->
 
-<h1>Feladat 354</h1>
-
-<div>
+<div class="container">
+  <h1>Feladat 354</h1>
+  <h2 class="mb-3">Területszámítás</h2>
+  <form>
+    <div class="form-group row mb-2">
+      <label for="aSide" class="col-sm-1 col-form-label">A oldal</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control"
+        [(ngModel)]="aSide" name="aSide">
+      </div>
+    </div>
+    <div class="form-group row mb-2">
+      <label for="bSide" class="col-sm-1 col-form-label">B oldal</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control"
+        [(ngModel)]="bSide" name="bSide">
+      </div>
+    </div>
+    <button class="btn btn-primary" (click)="calcArea()">Számol</button>
+    <div class="form-group row mb-2 mt-3">
+      <label for="result" class="col-sm-1 col-form-label">Terület</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control"
+        [(ngModel)]="area" name="area">
+      </div>
+    </div>
+  </form>
+</div>
+<div class="text-center">
   Tamás Domán, Szoft II N, 2022-11-29
 </div>
